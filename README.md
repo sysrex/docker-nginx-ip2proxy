@@ -45,7 +45,7 @@ http {
         ip2proxy_access_type shared_memory;
         ip2proxy_reverse_proxy on;
         
-        # Add custom headers so the values are accessible from PHP
+        # Add custom headers so the values are accessible from Reverse Proxy
         add_header IP2Proxy-Country-Code $ip2proxy_country_short;
         add_header IP2Proxy-Country-Name $ip2proxy_country_long;
         add_header IP2Proxy-Region $ip2proxy_region;

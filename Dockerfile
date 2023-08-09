@@ -38,4 +38,6 @@ RUN wget http://nginx.org/download/nginx-1.25.1.tar.gz \
 RUN mkdir /etc/nginx/conf.d \
     && mkdir /etc/nginx/sites-enabled/
 
+COPY nginx.conf /etc/nginx/nginx.conf
+
 EXPOSE 80
